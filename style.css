@@ -1,9 +1,23 @@
+body {
+    background-image: url(./img/fundo.png);
+    background-attachment: fixed;
+
+}
 
 h1 {
     text-align: center;
+    border: solid;
+    padding: 15px;
+    background-color: beige;
+    
 }
 h3{
     text-align: 150px;
+    border: solid;
+    padding: 15px;
+    width: 150px;
+    background-color: beige;
+    
     
 }
 .menu1{
@@ -47,6 +61,9 @@ h3{
     margin: 30px;
     padding: 10px;
     border: solid; 
-    
+    background-color: beige;
 }
-
+button {
+    color: blue;
+    background-color: black;
+}
