@@ -1,69 +1,133 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO COM IMAGEM */
 body {
     background-image: url(./img/fundo.png);
-    background-attachment: fixed;
-
+    background-size: cover;        /* Ajusta ao tamanho da tela */
+    background-position: center;   /* Centraliza */
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* Fixa o fundo */
+    font-family: 'Segoe UI', sans-serif;
 }
 
+/* CAMADA LEVE PARA MELHORAR LEITURA */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+}
+
+/* TÍTULO */
 h1 {
     text-align: center;
-    border: solid;
-    padding: 15px;
-    background-color: beige;
-    
+    padding: 25px;
+    background: white;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-h3{
-    text-align: 150px;
-    border: solid;
-    padding: 15px;
-    width: 150px;
-    background-color: beige;
-    
-    
-}
-.menu1{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-   
-}
-.menu{
-     width: 10px;
-    height: 5px;
-    background: rgb(224, 224, 227);
-    padding: 20px;
-    margin: 10px;
-    align-items: flex;
-    border-radius: 5px;
-}
-.listaDeLivros{
 
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.livro {
-   
-    width: 300px;
-    height: 200px;
-    background: rgb(224, 224, 227);
-    padding: 20px;
-    margin: 10px;
-    align-items: flex;
-    border-radius: 8px;
-    
-
-}
+/* SOBRE */
 .sobre {
-    box-sizing: border-box;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
-    margin: 30px;
-    padding: 10px;
-    border: solid; 
-    background-color: beige;
 }
-button {
-    color: blue;
-    background-color: black;
+
+/* MENU */
+.menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px;
+}
+
+.menu {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* LISTA DE LIVROS */
+.listaDeLivros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* CARD DO LIVRO */
+.livro {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+}
+
+.livro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* PDF */
+.livro iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* BOTÃO DOWNLOAD */
+.livro a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4ecdc4;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.livro a:hover {
+    background: #1a535c;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .livro iframe {
+        height: 180px;
+    }
+
 }

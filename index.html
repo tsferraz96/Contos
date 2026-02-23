@@ -1,190 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
-<head class="site-header">
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
+    <title>TATU Contos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contos infantis</title>
-    
     <link rel="stylesheet" href="style.css">
-    
-   
-    <h1>TATU Contos</h1>
 </head>
-    <body>
-         
 
-    <div class="sobre">
-        <h2>Sobre o Site</h2>
-        <p>O site auxilia para estimular a leitura de crianças em média de 4-6 anos de idade. São histórias curtas, com inicio, meio e fim.
-        Os livros podem ser baixados e lidos de forma on-line.
-        </p>
-    </div>
+<body>
 
-    <div class="pesquisa">
-        <h3>Pesquisar Livro: <br></h3>
-        <input type="text" id="campoPesquisa" list="titulosLivros">
-        <input type="button" value="Ok" id="btnPesquisar">
-    </div>
+<h1>TATU Contos</h1>
 
-    <datalist id="titulosLivros">
-    </datalist>
-    
-    <h2 class="menu1">
-       <button class="menu">A</button>
-       <button class="menu">B</button>
-       <button class="menu">C</button>
-       <button class="menu">D</button>
-       <button class="menu">E</button>
-       <button class="menu">F</button>
-       <button class="menu">G</button>
-       <button class="menu">H</button>
-       <button class="menu">I</button>
-       <button class="menu">J</button>
-       <button class="menu">K</button>
-       <button class="menu">L</button>
-       <button class="menu">M</button>
-       <button class="menu">N</button>
-       <button class="menu">O</button>
-       <button class="menu">P</button>
-       <button class="menu">Q</button>
-       <button class="menu">R</button>
-       <button class="menu">S</button>
-       <button class="menu">T</button>
-       <button class="menu">U</button>
-       <button class="menu">V</button>
-       <button class="menu">W</button>
-       <button class="menu">X</button>
-       <button class="menu">Y</button>
-       <button class="menu">Z</button>
+<div class="sobre">
+    <h2>Sobre o Site</h2>
+    <p>
+        O site auxilia para estimular a leitura de crianças de 4 a 6 anos.
+        São histórias curtas, com início, meio e fim.
+        Os livros podem ser baixados e lidos on-line.
+    </p>
+</div>
 
-    </h2>
+<div class="pesquisa">
+    <h3>Pesquisar Livro:</h3>
+    <input type="text" id="campoPesquisa" list="titulosLivros">
+    <input type="button" value="Ok" id="btnPesquisar">
+</div>
 
-    <div class="listaDeLivros">
-<<<<<<< HEAD
-        <h3 class="livro" data-title="A_Abelha_Amarela_e_a_Colmeia_Organizada" id="livro1">A ABELHA E A COLMEIA ORGANIZADA <br> <iframe src="./Livros/A_Abelha_Amarela_e_a_Colmeia_Organizada.pdf" frameborder="0"></iframe><br><a href="./Livros/A_Abelha_Amarela_e_a_Colmeia_Organizada.pdf" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="A Nuvem Que Virou Unicórnio" id="livro2">A NUVEM QUE VIROU UNICÓRNIO <br> <iframe src="./Livros/A_Nuvem_que_Virou_Unicórnio.pdf" frameborder="0"></iframe><br><a href="./Livros/A_Nuvem_Que_Virou_Unicórnio.pdf" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="BERNARDO_E_O_BALÃO" id="livro3">BERNARDO E O BALÃO <br><iframe src="./Livros/BERNARDO_E_O_BALÃO.pdf" frameborder="0"></iframe><br><a href="./Livros/BERNARDO_E_O_BALÃO.pdf" target="_blank">DOWNLOAD</a></h3>
+<datalist id="titulosLivros">
+    <option value="A Abelha e a Colmeia Organizada">
+    <option value="A Nuvem que Virou Unicórnio">
+    <option value="Bernardo e o Balão">
+    <option value="Cachorro Curioso">
+    <option value="Dragão Dorminhoco">
+    <option value="Elefante Educado">
+    <option value="Fada das Flores">
+    <option value="Gato Curioso">
+    <option value="Hipopótamo Feliz">
+    <option value="Ilha Invisível">
+    <option value="Jacaré Jogador">
+    <option value="Kiko, o Koala">
+    <option value="Leão Leal">
+    <option value="Macaco Malabarista">
+    <option value="Navio das Nuvens">
+    <option value="O Lápis Mágico que Desenhava o Futuro">
+    <option value="O Robô que Tinha Medo de Cocegas">
+    <option value="O Urso que Não Sabia Compartilhar">
+    <option value="Ovelha Observadora">
+    <option value="Pinguim Patinador">
+    <option value="Quadro que Falava">
+    <option value="Robô Roncador">
+    <option value="Sapo Saltitante">
+    <option value="Tartaruga Teimosa">
+    <option value="Urso Unicórnio">
+    <option value="Vento Valente">
+    <option value="Wambat Trabalhador">
+    <option value="Xilofone Colorido">
+    <option value="Yak Yoyo">
+    <option value="Zeca a Zebra">
+</datalist>
 
-        <h3 class="livro" data-title="CACHORRO_CURIOSO" id="livro4">CACHORRO CURIOSO <br><iframe src="./Livros/CACHORRO_CURIOSO.pdf" frameborder="0"></iframe><br><a href="./Livros/CACHORRO_CURIOSO.pdf" target="_blank">DOWNLOAD</a></h3>
+<div class="menu1">
+    <!-- Menu A-Z -->
+    <script>
+        for(let i=65;i<=90;i++){
+            document.write('<button class="menu">'+String.fromCharCode(i)+'</button>');
+        }
+    </script>
+</div>
 
-        <h3 class="livro" data-title="DRAGÃO_DOMINHOCO" id="livro5">DRAGÃO DORMINHOCO <br><iframe src="./Livros/DRAGÃO_DORMINHOCO.pdf" frameborder="0"></iframe><br><a href="./Livros/DRAGÃO_DORMINHOCO.pdf" target="_blank">DOWNLOAD</a></h3>
+<div class="listaDeLivros">
 
-        <h3 class="livro" data-title="ELEFANTE_EDUCADO" id="livro6">ELEFANTE_EDUCADO <br><iframe src="./Livros/ELEFANTE_EDUCADO.pdf" frameborder="0"></iframe><br><a href="./Livros/ELEFANTE_EDUCADO.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- A -->
+<h3 class="livro">A ABELHA E A COLMEIA ORGANIZADA<br>
+<iframe src="./Livros/A_Abelha_Amarela_e_a_Colmeia_Organizada.pdf"></iframe><br>
+<a href="./Livros/A_Abelha_Amarela_e_a_Colmeia_Organizada.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="FADA_DAS_FLORES" id="livro7">FADA DAS FLORES <br><iframe src="./Livros/FADA_DAS_FLORES.pdf" frameborder="0"></iframe><br><a href="./Livros/FADA_DAS_FLORES.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">A NUVEM QUE VIROU UNICÓRNIO<br>
+<iframe src="./Livros/A_Nuvem_que_Virou_Unicórnio.pdf"></iframe><br>
+<a href="./Livros/A_Nuvem_que_Virou_Unicórnio.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="GATO_CURIOSO" id="livro8">GATO CURIOSO <br><iframe src="./Livros/GATO_CURIOSO.pdf" frameborder="0"></iframe><br><a href="./Livros/GATO_CURIOSO.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- B -->
+<h3 class="livro">BERNARDO E O BALÃO<br>
+<iframe src="./Livros/BERNARDO_E_O_BALÃO.pdf"></iframe><br>
+<a href="./Livros/BERNARDO_E_O_BALÃO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="HIPOPÓTAMO_FELIZ" id="livro9">HIPOPÓTAMO FELIZ <br><iframe src="./Livros/HIPOPÓTAMO_FELIZ.pdf" frameborder="0"></iframe><br><a href="./Livros/HIPOPÓTAMO_FELIZ.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- C -->
+<h3 class="livro">CACHORRO CURIOSO<br>
+<iframe src="./Livros/CACHORRO_CURIOSO.pdf"></iframe><br>
+<a href="./Livros/CACHORRO_CURIOSO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="ILHA_INVISÍVEL" id="livro10">ILHA INVISÍVEL <br><iframe src="./Livros/ILHA_INVISÍVEL.pdf" frameborder="0"></iframe><br><a href="./Livros/ILHA_INVISÍVEL.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- D -->
+<h3 class="livro">DRAGÃO DORMINHOCO<br>
+<iframe src="./Livros/DRAGÃO_DORMINHOCO.pdf"></iframe><br>
+<a href="./Livros/DRAGÃO_DORMINHOCO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="JACARÉ_JOGADOR" id="livro11">JACARÉ JOGADOR <br><iframe src="./Livros/JACARÉ_JOGADOR.pdf" frameborder="0"></iframe><br><a href="./Livros/JACARÉ_JOGADOR.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- E -->
+<h3 class="livro">ELEFANTE EDUCADO<br>
+<iframe src="./Livros/ELEFANTE_EDUCADO.pdf"></iframe><br>
+<a href="./Livros/ELEFANTE_EDUCADO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="KIKO_O_COALA" id="livro12">KIKO, O KOALA <br><iframe src="./Livros/KIKO_O_COALA.pdf" frameborder="0"></iframe><br><a href="./Livros/KIKO_O_COALA.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- F -->
+<h3 class="livro">FADA DAS FLORES<br>
+<iframe src="./Livros/FADA_DAS_FLORES.pdf"></iframe><br>
+<a href="./Livros/FADA_DAS_FLORES.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="LEÃO_LEAL" id="livro13">LEÃO LEAL <br><iframe src="./Livros/LEÃO_LEAL.pdf" frameborder="0"></iframe><br><a href="./Livros/LEÃO_LEAL.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- G -->
+<h3 class="livro">GATO CURIOSO<br>
+<iframe src="./Livros/GATO_CURIOSO.pdf"></iframe><br>
+<a href="./Livros/GATO_CURIOSO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="MACACO_MALABARISTA" id="livro14">MACACO MALABARISTA <br><iframe src="./Livros/MACACO_MALABARISTA.pdf" frameborder="0"></iframe><br><a href="./Livros/MACACO_MALABARISTA.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- H -->
+<h3 class="livro">HIPOPÓTAMO FELIZ<br>
+<iframe src="./Livros/HIPOPÓTAMO_FELIZ.pdf"></iframe><br>
+<a href="./Livros/HIPOPÓTAMO_FELIZ.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="NAVIO_DAS_NUVENS" id="livro15">NAVIO DAS NUVENS <br><iframe src="./Livros/NAVIO_DAS_NUVENS.pdf" frameborder="0"></iframe><br><a href="./Livros/NAVIO_DAS_NUVENS.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- I -->
+<h3 class="livro">ILHA INVISÍVEL<br>
+<iframe src="./Livros/ILHA_INVISÍVEL.pdf"></iframe><br>
+<a href="./Livros/ILHA_INVISÍVEL.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO" id="livro16">O LAPÍS MÁGICO QUE DESENHAVA O FUTURO <br><iframe src="./Livros/O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO.pdf" frameborder="0"></iframe><br><a href="./Livros/O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS" id="livro17"><br>O ROBÔ QUE TINHA MEDO DE COCEGAS <br><iframe src="./Livros/O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS.pdf" frameborder="0"></iframe><br><a href="./Livros/O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS.pdf" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="O_URSO_QUE_NÃO_SABIA_COMPARTILHAR" id="livro18"><br>O URSO QUE NÃO SABIA COMPARTILHAR<br><iframe src="./Livros/O_URSO_QUE_NÃO_SABIA_COMPARTILHAR.pdf" frameborder="0"></iframe><br><a href="./Livros/O_URSO_QUE_NÃO_SABIA_COMPARTILHAR.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- J -->
+<h3 class="livro">JACARÉ JOGADOR<br>
+<iframe src="./Livros/JACARÉ_JOGADOR.pdf"></iframe><br>
+<a href="./Livros/JACARÉ_JOGADOR.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="OVELHA_OBSERVADORA" id="livro19"><br>OVELHA OBSERVADORA<br><iframe src="./Livros/OVELHA_OBSERVADORA.pdf" frameborder="0"></iframe><br><a href="./Livros/OVELHA_OBSERVADORA.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- K -->
+<h3 class="livro">KIKO, O KOALA<br>
+<iframe src="./Livros/KIKO_O_COALA.pdf"></iframe><br>
+<a href="./Livros/KIKO_O_COALA.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="PINGUIM_PATINADOR" id="livro20"><br>PINGUIM PATINADOR<br><iframe src="./Livros/PINGUIM_PATINADOR.pdf" frameborder="0"></iframe><br><a href="./Livros/PINGUIM_PATINADOR" target="_blank">DOWNLOAD</a></h3>
+<!-- L -->
+<h3 class="livro">LEÃO LEAL<br>
+<iframe src="./Livros/LEÃO_LEAL.pdf"></iframe><br>
+<a href="./Livros/LEÃO_LEAL.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="QUADRO_QUE_FALAVA" id="livro21"><br>QUADRO_QUE_FALAVA<br><iframe src="./Livros/QUADRO_QUE_FALAVA.pdf" frameborder="0"></iframe><br><a href="./Livros/QUADRO_QUE_FALAVA.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- M -->
+<h3 class="livro">MACACO MALABARISTA<br>
+<iframe src="./Livros/MACACO_MALABARISTA.pdf"></iframe><br>
+<a href="./Livros/MACACO_MALABARISTA.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="ROBÔ_RONCADOR" id="livro22"><br>ROBÔ RONCADOR<br><iframe src="./Livros/ROBÔ_RONCADOR.pdf" frameborder="0"></iframe><br><a href="./Livros/ROBÔ_RONCADOR.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- N -->
+<h3 class="livro">NAVIO DAS NUVENS<br>
+<iframe src="./Livros/NAVIO_DAS_NUVENS.pdf"></iframe><br>
+<a href="./Livros/NAVIO_DAS_NUVENS.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="SAPO_SALTITANTE" id="livro23"><br>SAPO SALTITANTE<br><iframe src="./Livros/SAPO_SALTITANTE.pdf" frameborder="0"></iframe><br><a href="./Livros/SAPO_SALTITANTE.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- O -->
+<h3 class="livro">O LÁPIS MÁGICO QUE DESENHAVA O FUTURO<br>
+<iframe src="./Livros/O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO.pdf"></iframe><br>
+<a href="./Livros/O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="TARTARUGA_TEIMOSA" id="livro24"><br>TARTARUGA TEIMOSA<br><iframe src="./Livros/TARTARUGA_TEIMOSA.pdf" frameborder="0"></iframe><br><a href="./Livros/TARTARUGA_TEIMOSA.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">O ROBÔ QUE TINHA MEDO DE COCEGAS<br>
+<iframe src="./Livros/O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS.pdf"></iframe><br>
+<a href="./Livros/O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="URSO_UNICÓRNIO" id="livro25"><br>URSO UNICÓRNIO<br><iframe src="./Livros/URSO_UNICÓRNIO.pdf" frameborder="0"></iframe><br><a href="./Livros/URSO_UNICÓRNIO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">O URSO QUE NÃO SABIA COMPARTILHAR<br>
+<iframe src="./Livros/O_URSO_QUE_NÃO_SABIA_COMPARTILHAR.pdf"></iframe><br>
+<a href="./Livros/O_URSO_QUE_NÃO_SABIA_COMPARTILHAR.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="VENTO_VALENTE" id="livro26"><br>VENTO VALENTE<br><iframe src="./Livros/VENTO_VALENTE.pdf" frameborder="0"></iframe><br><a href="./Livros/VENTO_VALENTE.pdf" target="_blank">DOWNLOAD</a></h3>
+<!-- Restante -->
+<h3 class="livro">OVELHA OBSERVADORA<br><iframe src="./Livros/OVELHA_OBSERVADORA.pdf"></iframe><br><a href="./Livros/OVELHA_OBSERVADORA.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="WAMBAT_TRABALHADOR" id="livro27"><br>WAMBAT TRABALHADOR<br><iframe src="./Livros/WAMBAT_TRABALHADOR.pdf" frameborder="0"></iframe><br><a href="./Livros/WAMBAT_TRABALHADOR.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">PINGUIM PATINADOR<br><iframe src="./Livros/PINGUIM_PATINADOR.pdf"></iframe><br><a href="./Livros/PINGUIM_PATINADOR.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="XILOFONE_COLORIDO" id="livro27"><br>XILOFONE COLORIDO<br><iframe src="./Livros/XILOFONE_COLORIDO.pdf" frameborder="0"></iframe><br><a href="./Livros/XILOFONE_COLORIDO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">QUADRO QUE FALAVA<br><iframe src="./Livros/QUADRO_QUE_FALAVA.pdf"></iframe><br><a href="./Livros/QUADRO_QUE_FALAVA.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="YAK_YOYO" id="livro28"><br>YAK YOYO<br><iframe src="./Livros/YAK_YOYO.pdf" frameborder="0"></iframe><br><a href="./Livros/YAK_YOYO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">ROBÔ RONCADOR<br><iframe src="./Livros/ROBÔ_RONCADOR.pdf"></iframe><br><a href="./Livros/ROBÔ_RONCADOR.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="ZECA_A_ZEBRA" id="livro29"><br>ZECA A ZEBRA<br><iframe src="./Livros/ZECA_A_ZEBRA.pdf" frameborder="0"></iframe><br><a href="./Livros/ZECA_A_ZEBRA.pdf" target="_blank">DOWNLOAD</a></h3>
-=======
-        <h3 class="livro" data-title="A_Abelha_Amarela_e_a_Colmeia_Organizada" id="livro1">A ABELHA E A COLMEIA ORGANIZADA <br> <iframe src="./A_Abelha_Amarela_e_a_Colmeia_Organizada.pdf" frameborder="0"></iframe><br><a href="./A_Nuvem_que_Virou_Unicórnio" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="A Nuvem Que Virou Unicórnio" id="livro2">A NUVEM QUE VIROU UNICÓRNIO <br> <iframe src="./A_Nuvem_que_Virou_Unicórnio.pdf" frameborder="0"></iframe><br><a href="./A_Nuvem_que_Virou_Unicórnio" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="BERNARDO_E_O_BALÃO" id="livro3">BERNARDO E O BALÃO <br><iframe src="./BERNARDO_E_O_BALÃO.pdf" frameborder="0"></iframe><br><a href="./BERNARDO_E_O_BALÃO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">SAPO SALTITANTE<br><iframe src="./Livros/SAPO_SALTITANTE.pdf"></iframe><br><a href="./Livros/SAPO_SALTITANTE.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="CACHORRO_CURIOSO" id="livro4">CACHORRO CURIOSO <br><iframe src="./CACHORRO_CURIOSO.pdf" frameborder="0"></iframe><br><a href="./CACHORRO_CURIOSO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">TARTARUGA TEIMOSA<br><iframe src="./Livros/TARTARUGA_TEIMOSA.pdf"></iframe><br><a href="./Livros/TARTARUGA_TEIMOSA.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="DRAGÃO_DOMINHOCO" id="livro5">DRAGÃO DORMINHOCO <br><iframe src="./DRAGÃO_DORMINHOCO.pdf" frameborder="0"></iframe><br><a href="./DRAGÃO_DORMINHOCO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">URSO UNICÓRNIO<br><iframe src="./Livros/URSO_UNICÓRNIO.pdf"></iframe><br><a href="./Livros/URSO_UNICÓRNIO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="ELEFANTE_EDUCADO" id="livro6">ELEFANTE_EDUCADO <br><iframe src="./ELEFANTE_EDUCADO.pdf" frameborder="0"></iframe><br><a href="./ELEFANTE_EDUCADO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">VENTO VALENTE<br><iframe src="./Livros/VENTO_VALENTE.pdf"></iframe><br><a href="./Livros/VENTO_VALENTE.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="FADA_DAS_FLORES" id="livro7">FADA DAS FLORES <br><iframe src="./FADA_DAS_FLORES.pdf" frameborder="0"></iframe><br><a href="./FADA_DAS_FLORES.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">WAMBAT TRABALHADOR<br><iframe src="./Livros/WAMBAT_TRABALHADOR.pdf"></iframe><br><a href="./Livros/WAMBAT_TRABALHADOR.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="GATO_CURIOSO" id="livro8">GATO CURIOSO <br><iframe src="./GATO_CURIOSO.pdf" frameborder="0"></iframe><br><a href="./GATO_CURIOSO.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">XILOFONE COLORIDO<br><iframe src="./Livros/XILOFONE_COLORIDO.pdf"></iframe><br><a href="./Livros/XILOFONE_COLORIDO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="HIPOPÓTAMO_FELIZ" id="livro9">HIPOPÓTAMO FELIZ <br><iframe src="./HIPOPÓTAMO_FELIZ.pdf" frameborder="0"></iframe><br><a href="./HIPOPÓTAMO_FELIZ.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">YAK YOYO<br><iframe src="./Livros/YAK_YOYO.pdf"></iframe><br><a href="./Livros/YAK_YOYO.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="ILHA_INVISÍVEL" id="livro10">ILHA INVISÍVEL <br><iframe src="./ILHA_INVISÍVEL.pdf" frameborder="0"></iframe><br><a href="./ILHA_INVISÍVEL.pdf" target="_blank">DOWNLOAD</a></h3>
+<h3 class="livro">ZECA A ZEBRA<br><iframe src="./Livros/ZECA_A_ZEBRA.pdf"></iframe><br><a href="./Livros/ZECA_A_ZEBRA.pdf" target="_blank">DOWNLOAD</a></h3>
 
-        <h3 class="livro" data-title="JACARÉ_JOGADOR" id="livro11">JACARÉ JOGADOR <br><iframe src="./JACARÉ_JOGADOR.pdf" frameborder="0"></iframe><br><a href="./JACARÉ_JOGADOR.pdf" target="_blank">DOWNLOAD</a></h3>
+</div>
 
-        <h3 class="livro" data-title="KIKO_O_COALA" id="livro12">KIKO, O KOALA <br><iframe src="./KIKO_O_COALA.pdf" frameborder="0"></iframe><br><a href="./KIKO_O_COALA.pdf" target="_blank">DOWNLOAD</a></h3>
+<script src="script.js"></script>
 
-        <h3 class="livro" data-title="LEÃO_LEAL" id="livro13">LEÃO LEAL <br><iframe src="./LEÃO_LEAL.pdf" frameborder="0"></iframe><br><a href="./LEÃO_LEAL.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="MACACO_MALABARISTA" id="livro14">MACACO MALABARISTA <br><iframe src="./MACACO_MALABARISTA.pdf" frameborder="0"></iframe><br><a href="./MACACO_MALABARISTA.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="NAVIO_DAS_NUVENS" id="livro15">NAVIO DAS NUVENS <br><iframe src="./NAVIO_DAS_NUVENS.pdf" frameborder="0"></iframe><br><a href="./NAVIO_DAS_NUVENS.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO" id="livro16">O LAPÍS MÁGICO QUE DESENHAVA O FUTURO <br><iframe src="./O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO.pdf" frameborder="0"></iframe><br><a href="./O_LAPÍS_MÁGICO_QUE_DESENHAVA_O_FUTURO" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS" id="livro17"><br>O ROBÔ QUE TINHA MEDO DE COCEGAS <br><iframe src="./O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS.pdf" frameborder="0"></iframe><br><a href="./O_ROBÔ_QUE_TINHA_MEDO_DE_COCEGAS.pdf" target="_blank">DOWNLOAD</a></h3>
-        
-        <h3 class="livro" data-title="O_URSO_QUE_NÃO_SABIA_COMPARTILHAR" id="livro18"><br>O URSO QUE NÃO SABIA COMPARTILHAR<br><iframe src="./O_URSO_QUE_NÃO_SABIA_COMPARTILHAR.pdf" frameborder="0"></iframe><br><a href="./O_URSO_QUE_NÃO_SABIA_COMPARTILHAR.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="OVELHA_OBSERVADORA" id="livro19"><br>OVELHA OBSERVADORA<br><iframe src="./OVELHA_OBSERVADORA.pdf" frameborder="0"></iframe><br><a href="./OVELHA_OBSERVADORA.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="PINGUIM_PATINADOR" id="livro20"><br>PINGUIM PATINADOR<br><iframe src="./PINGUIM_PATINADOR.pdf" frameborder="0"></iframe><br><a href="./PINGUIM_PATINADOR" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="QUADRO_QUE_FALAVA" id="livro21"><br>QUADRO_QUE_FALAVA<br><iframe src="./QUADRO_QUE_FALAVA.pdf" frameborder="0"></iframe><br><a href="./QUADRO_QUE_FALAVA.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="ROBÔ_RONCADOR" id="livro22"><br>ROBÔ RONCADOR<br><iframe src="./ROBÔ_RONCADOR.pdf" frameborder="0"></iframe><br><a href="./ROBÔ_RONCADOR.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="SAPO_SALTITANTE" id="livro23"><br>SAPO SALTITANTE<br><iframe src="./SAPO_SALTITANTE.pdf" frameborder="0"></iframe><br><a href="./SAPO_SALTITANTE.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="TARTARUGA_TEIMOSA" id="livro24"><br>TARTARUGA TEIMOSA<br><iframe src="./TARTARUGA_TEIMOSA.pdf" frameborder="0"></iframe><br><a href="./TARTARUGA_TEIMOSA.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="URSO_UNICÓRNIO" id="livro25"><br>URSO UNICÓRNIO<br><iframe src="./URSO_UNICÓRNIO.pdf" frameborder="0"></iframe><br><a href="./URSO_UNICÓRNIO.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="VENTO_VALENTE" id="livro26"><br>VENTO VALENTE<br><iframe src="./VENTO_VALENTE.pdf" frameborder="0"></iframe><br><a href="./VENTO_VALENTE.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="WAMBAT_TRABALHADOR" id="livro27"><br>WAMBAT TRABALHADOR<br><iframe src="./WAMBAT_TRABALHADOR.pdf" frameborder="0"></iframe><br><a href="./WAMBAT_TRABALHADOR.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="XILOFONE_COLORIDO" id="livro27"><br>XILOFONE COLORIDO<br><iframe src="./XILOFONE_COLORIDO.pdf" frameborder="0"></iframe><br><a href="./XILOFONE_COLORIDO.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="YAK_YOYO" id="livro28"><br>YAK YOYO<br><iframe src="./YAK_YOYO.pdf" frameborder="0"></iframe><br><a href="./YAK_YOYO.pdf" target="_blank">DOWNLOAD</a></h3>
-
-        <h3 class="livro" data-title="ZECA_A_ZEBRA" id="livro29"><br>ZECA A ZEBRA<br><iframe src="./ZECA_A_ZEBRA.pdf" frameborder="0"></iframe><br><a href="./ZECA_A_ZEBRA.pdf" target="_blank">DOWNLOAD</a></h3>
->>>>>>> e16f7ce989c8716b9d81bec7826294ce4265cf8b
-
-
-    </div>
-    
-    <script src="script.js"></script>
 </body>
 </html>
