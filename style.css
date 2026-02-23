@@ -7,7 +7,7 @@
 
 /* FUNDO COM IMAGEM */
 body {
-    background-image: url(./img/fundo.png);
+    background-image: url("./img/fundo.png");
     background-size: cover;        /* Ajusta ao tamanho da tela */
     background-position: center;   /* Centraliza */
     background-repeat: no-repeat;
